@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>PlatePlay - #1 Restauration App</title>
+        <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width,height=device-height,target-densitydpi=device-dpi">
+        <link href="css/style.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="eclips_container">
+            <img src="assets/images/restaurant.png" class="restaurant-logo t-2">
+
+            <div class="eclipse-plate" id="plate-header">
+                <div class="b-b"></div>
+            </div>
+        </div>
+        <a href="/">
+            <img src="assets/images/logo_white.png" class="logo">
+        </a>
+
+        <div class="container">
+            <div class="body-padding ">
+                <span class="title-food" id="name">
+                    
+                </span>
+            </div>
+
+            
+        </div>
+        <div class="description" >
+            <p class="body-padding" id="description">
+            </p>
+            <div class="counter-container" >
+                <div class="counter" onclick="minus_counter()">
+                    -
+                </div>
+                <span class="counter-value" id="counter-value">1</span>
+                <div class="counter" onclick="add_counter()">
+                    +
+                </div>
+            </div>
+        </div>
+        
+        <div class="button-wrapper">
+            <button class="add-to-cart" id="price" onclick="add_to_cart()"></button>
+        </div>
+       
+
+        <script src="js/food.js"></script>
+    </body>
+</html>
