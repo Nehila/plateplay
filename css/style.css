@@ -1,17 +1,17 @@
 @font-face {
     font-family: "SF Pro Display";
     font-weight: 700;
-    src: url("fonts/SFPRODISPLAYBOLD.OTF")
+    src: url("../fonts/SFPRODISPLAYBOLD.OTF")
 }
 @font-face {
     font-family: "SF Pro Display";
     font-weight: 200;
-    src: url("fonts/SFPRODISPLAYREGULAR.OTF")
+    src: url("../fonts/SFPRODISPLAYREGULAR.OTF")
 }
 @font-face {
     font-family: "SF Pro Display";
     font-weight: 400;
-    src: url("fonts/SFPRODISPLAYMEDIUM.OTF")
+    src: url("../fonts/SFPRODISPLAYMEDIUM.OTF")
 }
 
 * {
