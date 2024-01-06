@@ -6,7 +6,7 @@ const description = document.getElementById('description').innerText = data.desc
 
 
 const change_price_quantity = (value) => {
-    document.getElementById('price').innerText = `The total price is ${data.price} MAD`
+    document.getElementById('price').innerText = `The total price is ${data.price * value} MAD`
 }
 
 change_price_quantity(1)
