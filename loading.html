@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>PlatePlay - #1 Restauration App</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #FFFCF9;
+    }
+
+    .loader {
+      border: 7px solid #d6d6d6;
+      border-top: 7px solid #000;
+      border-radius: 50%;
+      width: 20vw;
+      max-width: 150px;
+      height: 20vw;
+      max-height: 150px;
+      animation: spin 1s linear infinite;
+      position: relative;
+    }
+
+    .logo {
+      width: 50%;
+      max-width: 75px;
+      height: auto;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @media screen and (max-width: 480px) {
+      .loader {
+        width: 60vw;
+        height: 60vw;
+      }
+
+      .logo {
+        width: 60%;
+        max-width: 75px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="/assets/images/logo_black.svg" class="logo" alt="Stripe Logo">
+  <div class="loader"></div>
+  <script>
+    setTimeout(() => {
+        window.location = '/checkout.html'
+    }, 2000);
+  </script>
+</body>
+</html>

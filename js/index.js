@@ -572,8 +572,8 @@ const categories = {
           }
        ]
     }
-}
- 
+ }
+  
 
 const category_html = `
     <div class="category {selected}" onclick="change_selected_category(this)">
@@ -639,8 +639,6 @@ const searchDish = (dishName) => {
         }
       }
     }
-
-     
     
     return results.length > 0 ? render_search_dishes(results) : dishes.innerHTML = '';
 }
@@ -648,7 +646,6 @@ const searchDish = (dishName) => {
 
 const dish_description = (e) => {
     data = JSON.parse(e.getAttribute('data-menu'))
-    console.log(data)
     data_to_save = JSON.stringify(data)
     localStorage.setItem('data', data_to_save)
     window.location = '/food.html'
